@@ -1,0 +1,13 @@
+/.vs
+/Master.BusinessDomain/obj
+/Master.BusinessDomain/bin
+/Master.DataDomain/obj
+/Master.DataDomain/bin
+/Master.EntityFramework/obj
+/Master.EntityFramework/bin
+/Master.Microservice/obj
+/Master.Microservice/bin
+/Master.Models/obj
+/Master.Models/bin
+/Master.Utilities/obj
+/Master.Utilities/bin 
