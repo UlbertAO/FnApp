@@ -50,3 +50,50 @@ For Example:
 ![fnapp](https://imgur.com/FBAdACt.jpeg)
 
 NOW BUILD AND RUN
+
+![fnapp](https://imgur.com/t5y8wze.jpeg)
+
+---
+
+Database commands:
+```
+CREATE TABLE customers (
+	customer_id INT IDENTITY (1, 1) PRIMARY KEY,
+	first_name VARCHAR (255) NOT NULL,
+	last_name VARCHAR (255) NOT NULL,
+	phone VARCHAR (25),
+	email VARCHAR (255) NOT NULL,
+	street VARCHAR (255),
+	city VARCHAR (50),
+	state VARCHAR (25),
+	zip_code VARCHAR (5)
+);
+```
+Dummy data in table:
+```
+INSERT INTO customers VALUES('Itachi','Uchiha','9876543210','itachi@gmail.com','eg street','konoha','eg state','000000');
+```
+
+---
+#### Request & Response
+
+SaveCustomerDetail:
+![fnapp](https://imgur.com/UjrWrrZ.jpeg)
+
+GetAllCustomers:
+![fnapp](https://imgur.com/uwK5JQ3.jpeg)
+
+UpdateCustomerDetails:
+![fnapp](https://imgur.com/4hEBEP3.jpeg)
+GetAllCustomers:
+![fnapp](https://imgur.com/EZCvqhj.jpeg)
+
+GetCustomerById:
+![fnapp](https://imgur.com/aXWEs3d.jpeg)
+
+RemoveCustomerById:
+![fnapp](https://imgur.com/BSNeIUU.jpeg)
+GetAllCustomers:
+![fnapp](https://imgur.com/5tp1fXM.jpeg)
+
+---
