@@ -71,7 +71,7 @@ CREATE TABLE customers (
 ```
 Dummy data in table:
 ```
-INSERT INTO customers VALUES('Itachi','Uchiha','9876543210','itachi@gmail.com','eg street','konoha','eg state','000000');
+INSERT INTO customers VALUES('Itachi','Uchiha','9876543210','itachi@gmail.com','eg street','konoha','eg state','00000');
 ```
 
 ---
