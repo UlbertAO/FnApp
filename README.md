@@ -51,7 +51,7 @@ For Example:
 
 NOW BUILD AND RUN
 
-![fnapp](https://imgur.com/t5y8wze.jpeg)
+![fnapp](https://imgur.com/NLFFriE.jpeg)
 
 ---
 
@@ -95,5 +95,25 @@ RemoveCustomerById:
 ![fnapp](https://imgur.com/BSNeIUU.jpeg)
 GetAllCustomers:
 ![fnapp](https://imgur.com/5tp1fXM.jpeg)
+
+---
+#### Stored Procedure support
+Added SP call for GetAllCustomers in GetAllCustomersSP and  GetCustomerById in GetCustomerByIdSP. Request body will be same.
+SP:
+```
+CREATE procedure [dbo].[getCustomersById]
+(@id int)
+as 
+begin
+	select * from customers where customer_id=@id
+end
+```
+```
+CREATE procedure [dbo].[getAllCustomers]
+as 
+begin
+	select * from customers
+end
+```
 
 ---

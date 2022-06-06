@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.BusinessDomain", "Master.BusinessDomain\Master.BusinessDomain.csproj", "{7EFF90DB-BEBF-495C-89EF-48594B8971A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.BusinessDomain", "Master.BusinessDomain\Master.BusinessDomain.csproj", "{7EFF90DB-BEBF-495C-89EF-48594B8971A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.EntityFramework", "Master.EntityFramework\Master.EntityFramework.csproj", "{D4E7DAC4-2A26-40B7-960B-AF31B4F3FF62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.EntityFramework", "Master.EntityFramework\Master.EntityFramework.csproj", "{D4E7DAC4-2A26-40B7-960B-AF31B4F3FF62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Models", "Master.Models\Master.Models.csproj", "{3D824B97-7929-40B3-A10D-0A673A3991B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Models", "Master.Models\Master.Models.csproj", "{3D824B97-7929-40B3-A10D-0A673A3991B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.DataDomain", "Master.DataDomain\Master.DataDomain.csproj", "{61FF752E-0F21-4D07-86D4-AF67F053E26E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.DataDomain", "Master.DataDomain\Master.DataDomain.csproj", "{61FF752E-0F21-4D07-86D4-AF67F053E26E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Microservice", "Master.Microservice\Master.Microservice.csproj", "{3556925E-3CD0-4F44-A31C-155572058D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Microservice", "Master.Microservice\Master.Microservice.csproj", "{3556925E-3CD0-4F44-A31C-155572058D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Master.Utilities", "Master.Utilities\Master.Utilities.csproj", "{4191D33C-E19C-4981-8437-0B8EB0DFD8B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Master.Utilities", "Master.Utilities\Master.Utilities.csproj", "{4191D33C-E19C-4981-8437-0B8EB0DFD8B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
