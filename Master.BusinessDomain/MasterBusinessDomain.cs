@@ -2,6 +2,8 @@
 using Master.Models.EntityModels;
 using Master.Models.RequestModels;
 using Master.Models.ResponseModels;
+using Master.Utilities;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,6 +13,7 @@ namespace Master.BusinessDomain
     public class MasterBusinessDomain
     {
         private readonly MasterDataDomain masterDataDomain;
+        private static readonly IMemoryCache memoryCache = new MemoryCache(new MemoryCacheOptions());
 
         public MasterBusinessDomain()
         {
@@ -37,7 +40,19 @@ namespace Master.BusinessDomain
         } 
         public List<CustomerDetails> GetCustomers()
         {
-            return masterDataDomain.GetCustomers();
+            bool isCached = memoryCache.TryGetValue(CacheMemories.AllCustomers.ToString(), out List<CustomerDetails> customerDetails);
+            if(isCached)
+            {
+                customerDetails = memoryCache.Get(CacheMemories.AllCustomers.ToString()) as List<CustomerDetails>;
+            }
+            else
+            {
+                customerDetails = masterDataDomain.GetCustomers();
+                var cacheExpiry = new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromDays(2));
+                memoryCache.Set(CacheMemories.AllCustomers.ToString(), customerDetails, cacheExpiry);
+            }
+
+            return customerDetails;
         }
         public Base SaveCustomerDetail(CustomerDetails customerDetails)
         {
